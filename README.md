@@ -21,7 +21,7 @@ The launch script can be found under `dist/`, and can be moved to wherever you w
 Detailed help
 -------------
 
-> Copied from `ifilter --help`
+> Copied from `range2nums --help`
 
 ```plain
 usage: range2nums [-h] [-v] [-d DELIMITER] [-L] pattern
@@ -52,10 +52,10 @@ optional arguments:
 Example usage
 -------------
 
-Assuming that `ifilter` is in PATH. Denote the prompt as `prompt> `.
+Assuming that `range2nums` is in PATH. Denote the prompt as `prompt> `.
 
 ```bash
-prompt> seq 1 10 | ifilter -v 3,4,7
+prompt> seq 1 10 | range2nums -v 3,4,7
 1
 2
 5
@@ -63,7 +63,7 @@ prompt> seq 1 10 | ifilter -v 3,4,7
 8
 9
 10
-prompt> printf '%s\n' {1..3},{2..4} | ifilter -d, '[3],[3:]'
+prompt> printf '%s\n' {1..3},{2..4} | range2nums -d, '[3],[3:]'
 3,3
 3,4
 ```
